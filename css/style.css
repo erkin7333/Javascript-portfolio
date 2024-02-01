@@ -446,7 +446,7 @@ section{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    flex-direction: column;
+    /* flex-direction: column; */
     margin-top: 20px;
 }
 
@@ -553,6 +553,7 @@ section{
     border: 1px solid #111;
 }
 
+
 /* END CONTACT CSS */
 
 /* START FOOTER CSS */
@@ -632,6 +633,7 @@ footer p{
         margin-top: 40px;
     }
     .contact-form{
-        padding: 35px 40px;
+        padding: 35px 170px;
+        max-width: 350px;
     }
 }
