@@ -574,3 +574,14 @@ footer .footer-title{
 footer p{
     margin-top: 10px;
 }
+
+/* END  FOOTER CSS */
+
+/* REPOSNE MEDIA CSS */
+
+
+@media (max-width: 1049) {
+    header{
+        padding: 12px 20px;
+    }
+}
