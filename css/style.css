@@ -24,6 +24,11 @@ header{
     z-index: 999;
 }
 
+header.sticky{
+   background: crimson;
+   padding: 15px 150px; 
+}
+
 header .brand{
     color: #fff;
     font-size: 32px;
@@ -48,7 +53,7 @@ header .navigation a{
 
 
 header .navigation a:hover{
-    color: crimson;
+    color: #c433c9;
 }
 
 /* END HEADER CSS */
@@ -585,8 +590,36 @@ footer p{
     header{
         padding: 12px 20px;
     }
+    header.sticky{
+        padding: 10px 20px;
+    }
     header .navigation{
         display: none;
+    }
+    header .navigation.active{
+        z-index: 888;
+        position: fixed;
+        background: #fff;
+        top: 0;
+        right: 0;
+        width: 389px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+    }
+    header .navigation a{
+        color: #000;
+        font-size: 22px;
+        margin: 10px;
+        padding: 0 20px;
+        border-radius: 20px;
+    }
+    header .navigation a:hover{
+        background: crimson;
+        color: #fff;
     }
     .menu-btn{
         position: absolute; 
@@ -598,7 +631,16 @@ footer p{
         right: 0;
         margin: 0 20px;
         cursor: pointer;
+        transition: all 0.4s ease;
 
+    }
+    .menu-btn.active{
+        z-index: 999;
+        background: url(../images/close.png) no-repeat;
+        background-size: 25px;
+        background-position: center;
+        transition: all 0.4s ease;
+        filter: invert(1);
     }
     section{
         padding: 80px 20px;
